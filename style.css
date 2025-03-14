@@ -34,20 +34,28 @@ body{
 }
 
 /* the search */
-form{
+.form1{
     position: absolute;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    top: 250px;
-    left: 35%;
+    top:400px;
 }
 
-#search{
+.Tshivictext{
+    position: absolute;
+    top: 350px;
+    color: white; 
+    display: block;
+    margin-left: 350px;
+    font-size: 70px; 
+    font-weight: 700;
+    line-height: 0px;
+}    
+.search1{
     padding: 20px 150px 20px 60px;
     border-radius: 100px;
     border: none;
     font-size: 15px;
+    display: flex;
+    margin-left: 450px;
 }
 .search1::placeholder{
     color: rgb(231, 231, 231);
@@ -84,6 +92,7 @@ form{
     width: 200%;
     display: flex;
     animation: slideLeft 20s linear infinite;
+    transition: left 20s ease-in-out;
 }
 @keyframes slideLeft {
     from {
